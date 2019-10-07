@@ -1,0 +1,20 @@
+/*--##################################################### 
+#   ZEN_TECH solutions                                  #
+#   Programmer: Zukisa NANTE                            #
+#   Qualifications: Bachelor Electrical  Engineering    #
+#   Specialisation: Computer Operating Systems          #
+######################################################-*/
+/* declaring variables */
+/* body */
+body {
+  font: 100% "Abel", sans-serif;
+  background-color: lightblue; }
+
+#canvas {
+  background-color: black;
+  align: center; }
+
+.header {
+  margin: auto; }
+
+/*# sourceMappingURL=main.css.map */
