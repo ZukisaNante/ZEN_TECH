@@ -9,3 +9,4 @@
 >- JavaScirpt, HTML, SASS, CSS, NodeJS, Canvas, PHP
 ## License
 >-MIT ---
+>-IMAGES: parallax -> Photo by ian dooley on Unsplash 

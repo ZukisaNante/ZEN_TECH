@@ -1,26 +1,58 @@
-/*--##################################################### 
+    /*--##################################################### 
 #   ZEN_TECH solutions                                  #
 #   Programmer: Zukisa NANTE                            #
 #   Qualifications: Bachelor Electrical  Engineering    #
 #   Specialisation: Computer Operating Systems          #
 ######################################################-*/
-
-/* declaring variables */
-$pageFont: 'Abel', sans-serif;
-$primaryColor_1: #008080;
-$primaryColor_2: red;
-$primaryColor_3: #008080;
-$primaryColor_4: yellow;
-
-/* body */
-body{
-    font: 100% $pageFont;
-    background-color: $primaryColor_1;
+    /* declaring variables */
     
-}
-#canvas{
-    background-color: $primaryColor_3;
-}
-.header{
-    margin: auto;
-}
+    $pageFont: 'Abel',
+    sans-serif;
+    $primaryColor_1: #008080;
+    $primaryColor_2: red;
+    $primaryColor_3: #008080;
+    $primaryColor_4: yellow;
+    /* body */
+    
+    body,
+    html {
+        font: 100% $pageFont;
+        height: 100%;
+    }
+    
+    #canvas {
+        background-color: $primaryColor_3;
+    }
+    
+    .container {
+        margin: auto;
+        max-width: 500px;
+        padding: 10px;
+        text-align: center;
+        background-color: $primaryColor_4;
+    }
+    /* parallax */
+    
+    .parallax {
+        /* The image used */
+        background-image: url('../img/ian-dooley-DuBNA1QMpPA-unsplash.jpg');
+        /* Full height */
+        height: 100%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+    
+    @media only screen and (max-device-width: 1366px) {
+        .parallax {
+            background-attachment: scroll;
+        }
+    }
+    
+    .maps {
+        width: 100;
+        height: 400px;
+    }
