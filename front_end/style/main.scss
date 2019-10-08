@@ -7,9 +7,9 @@
 
 /* declaring variables */
 $pageFont: 'Abel', sans-serif;
-$primaryColor_1: lightblue;
+$primaryColor_1: #008080;
 $primaryColor_2: red;
-$primaryColor_3: black;
+$primaryColor_3: #008080;
 $primaryColor_4: yellow;
 
 /* body */
@@ -20,7 +20,6 @@ body{
 }
 #canvas{
     background-color: $primaryColor_3;
-    align: center;
 }
 .header{
     margin: auto;

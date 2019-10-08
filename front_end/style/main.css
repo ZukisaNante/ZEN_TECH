@@ -8,11 +8,10 @@
 /* body */
 body {
   font: 100% "Abel", sans-serif;
-  background-color: lightblue; }
+  background-color: #008080; }
 
 #canvas {
-  background-color: black;
-  align: center; }
+  background-color: #008080; }
 
 .header {
   margin: auto; }
