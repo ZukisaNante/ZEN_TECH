@@ -6,9 +6,17 @@
 ######################################################-*/
 
 /* function to call my API using my key */
-function googleMaps(){
-    let myMap = {
-        center: new google.maps.LatLng(51.508742,-0.120850),
-        zoom:5,
-    }
+function initMap() {
+    var myLatLng = { lat: -25.363, lng: 131.044 };
+
+    var map = new google.maps.Map(document.getElementByClassNames("maps"), {
+        zoom: 4,
+        center: myLatLng
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: "Hello World!"
+    });
 }
