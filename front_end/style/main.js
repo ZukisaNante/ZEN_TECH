@@ -30,7 +30,7 @@ export default StyleSheet.create({
     'maxWidth': [{ 'unit': 'px', 'value': 500 }],
     'padding': [{ 'unit': 'px', 'value': 10 }, { 'unit': 'px', 'value': 10 }, { 'unit': 'px', 'value': 10 }, { 'unit': 'px', 'value': 10 }],
     'textAlign': 'center',
-    'backgroundColor': 'yellow'
+    'backgroundColor': 'aqua'
   },
   // parallax
   'parallax': {
@@ -108,4 +108,13 @@ export default StyleSheet.create({
     'clear': 'both'
   },
   // Responsive layout - makes the three columns stack on top of each other instead of next to each other
+  // footer
+  'footer': {
+    'backgroundColor': '#333',
+    'textAlign': 'center',
+    'padding': [{ 'unit': 'px', 'value': 10 }, { 'unit': 'px', 'value': 10 }, { 'unit': 'px', 'value': 10 }, { 'unit': 'px', 'value': 10 }],
+    'color': 'white',
+    'overflow': 'hidden',
+    'height': [{ 'unit': 'px', 'value': 400 }]
+  }
 });
