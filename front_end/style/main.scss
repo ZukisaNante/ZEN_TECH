@@ -1,58 +1,201 @@
-    /*--##################################################### 
+/*--##################################################### 
 #   ZEN_TECH solutions                                  #
 #   Programmer: Zukisa NANTE                            #
 #   Qualifications: Bachelor Electrical  Engineering    #
 #   Specialisation: Computer Operating Systems          #
 ######################################################-*/
-    /* declaring variables */
-    
-    $pageFont: 'Abel',
-    sans-serif;
-    $primaryColor_1: #008080;
-    $primaryColor_2: red;
-    $primaryColor_3: #008080;
-    $primaryColor_4: yellow;
-    /* body */
-    
-    body,
-    html {
-        font: 100% $pageFont;
-        height: 100%;
-    }
-    
-    #canvas {
-        background-color: $primaryColor_3;
-    }
-    
-    .container {
-        margin: auto;
-        max-width: 500px;
-        padding: 10px;
-        text-align: center;
-        background-color: $primaryColor_4;
-    }
-    /* parallax */
-    
+
+
+/* declaring variables */
+
+$pageFont: "Abel",
+sans-serif;
+$primaryColor_1: #008080;
+$primaryColor_2: red;
+$primaryColor_3: #008080;
+$primaryColor_4: yellow;
+$mainBodyColor: lightGrey;
+
+/* body */
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font: 100% $pageFont;
+    height: 100%;
+    background-color: $mainBodyColor;
+}
+
+#canvas {
+    background-color: $primaryColor_3;
+}
+
+.mainContent {
+    margin: auto;
+    max-width: 500px;
+    padding: 10px;
+    text-align: center;
+    background-color: $primaryColor_4;
+}
+
+
+/* parallax */
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/ian-dooley-DuBNA1QMpPA-unsplash.jpg");
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+
+@media only screen and (max-device-width: 1366px) {
     .parallax {
-        /* The image used */
-        background-image: url('../img/ian-dooley-DuBNA1QMpPA-unsplash.jpg');
-        /* Full height */
-        height: 100%;
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-attachment: scroll;
     }
-    /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
-    
-    @media only screen and (max-device-width: 1366px) {
-        .parallax {
-            background-attachment: scroll;
-        }
+}
+
+
+/* For mobile phones: */
+
+[class*="col-"] {
+    width: 100%;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        background-color: $primaryColor_2;
     }
-    
-    .maps {
-        width: 100;
-        height: 400px;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .container {
+        background-color: green;
     }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .container {
+        background-color: blue;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .container {
+        background-color: $primaryColor_1;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        background-color: pink;
+    }
+}
+
+
+/* header */
+
+.header {
+    background-color: $primaryColor_1;
+    padding: 20px;
+    margin-block: 100px;
+    text-align: center;
+}
+
+
+/* nav */
+
+
+/* Style the top navigation bar */
+
+.nav {
+    overflow: hidden;
+    background-color: #333;
+    height: 400px;
+}
+
+
+/* Style the topnav links */
+
+.navLinks a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change color on hover */
+
+.navLinks a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Create three unequal columns that floats next to each other */
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+
+/* Left and right column */
+
+.column.side {
+    width: 25%;
+}
+
+
+/* Middle column */
+
+.column.middle {
+    width: 50%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column.side,
+    .column.middle {
+        width: 100%;
+    }
+}

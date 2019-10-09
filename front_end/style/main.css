@@ -6,17 +6,22 @@
 ######################################################-*/
 /* declaring variables */
 /* body */
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
   font: 100% "Abel", sans-serif;
   height: 100%;
+  background-color: lightGrey;
 }
 
 #canvas {
   background-color: #008080;
 }
 
-.container {
+.mainContent {
   margin: auto;
   max-width: 500px;
   padding: 10px;
@@ -44,8 +49,105 @@ html {
   }
 }
 
-.maps {
-  width: 100;
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    background-color: red;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    background-color: green;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    background-color: blue;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    background-color: #008080;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    background-color: pink;
+  }
+}
+
+/* header */
+.header {
+  background-color: #008080;
+  padding: 20px;
+  margin-block: 100px;
+  text-align: center;
+}
+
+/* nav */
+/* Style the top navigation bar */
+.nav {
+  overflow: hidden;
+  background-color: #333;
   height: 400px;
 }
-/*# sourceMappingURL=main.css.map */
+
+/* Style the topnav links */
+.navLinks a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.navLinks a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side,
+  .column.middle {
+    width: 100%;
+  }
+}
