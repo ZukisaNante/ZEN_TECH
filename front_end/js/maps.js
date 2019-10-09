@@ -6,3 +6,9 @@
 ######################################################-*/
 
 /* function to call my API using my key */
+function googleMaps(){
+    let myMap = {
+        center: new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+    }
+}
