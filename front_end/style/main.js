@@ -35,7 +35,7 @@ export default StyleSheet.create({
   // parallax
   'parallax': {
     // The image used
-    'backgroundImage': 'url("../img/ian-dooley-DuBNA1QMpPA-unsplash.jpg")',
+    'backgroundImage': 'url("../img/ian-dooley-DuBNA1QMpPA-unsplash-min.jpg")',
     // Full height
     'height': [{ 'unit': '%V', 'value': 1 }],
     // Create the parallax scrolling effect
@@ -59,16 +59,29 @@ export default StyleSheet.create({
   // Extra large devices (large laptops and desktops, 1200px and up)
   // header
   'header': {
-    'backgroundColor': '#008080',
-    'padding': [{ 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 20 }],
+    'backgroundImage': 'url("../img/tim-umphreys-6x1zA_0H9LA-unsplash-min.jpg")',
+    'backgroundPosition': 'center',
+    'backgroundRepeat': 'no-repeat',
+    'backgroundSize': 'cover',
+    'padding': [{ 'unit': 'px', 'value': 10 }, { 'unit': 'px', 'value': 10 }, { 'unit': 'px', 'value': 10 }, { 'unit': 'px', 'value': 10 }],
     'marginBlock': '100px',
-    'textAlign': 'center'
+    'textAlign': 'center',
+    'color': 'white',
+    'opacity': '0.2',
+    'fontWeight': 'normal',
+    'only screen&&<w300': {
+      'fontSize': [{ 'unit': 'px', 'value': 11 }]
+    }
   },
+  // On smaller screens, decrease text size
   // nav
   // Style the top navigation bar
   'nav': {
     'overflow': 'hidden',
-    'backgroundColor': '#333',
+    'backgroundImage': 'url("../img/Zukisa_waveOH-min.jpg")',
+    'backgroundPosition': 'center',
+    'backgroundRepeat': 'no-repeat',
+    'backgroundSize': 'cover',
     'height': [{ 'unit': 'px', 'value': 400 }]
   },
   // Style the navL.navLinks links
@@ -116,11 +129,100 @@ export default StyleSheet.create({
   },
   // footer
   'footer': {
-    'backgroundColor': '#333',
+    'backgroundImage': 'url("../img/davidcohen-EhSxbBCjr9A-unsplash-min.jpg")',
+    'backgroundPosition': 'center',
+    'backgroundRepeat': 'no-repeat',
+    'backgroundSize': 'cover',
     'textAlign': 'center',
     'padding': [{ 'unit': 'px', 'value': 10 }, { 'unit': 'px', 'value': 10 }, { 'unit': 'px', 'value': 10 }, { 'unit': 'px', 'value': 10 }],
     'color': 'white',
     'overflow': 'hidden',
     'height': [{ 'unit': 'px', 'value': 400 }]
+  },
+  'mySlides': {
+    'display': 'none'
+  },
+  'img': {
+    'verticalAlign': 'middle'
+  },
+  // Slideshow container
+  'slideshow-container': {
+    'maxWidth': [{ 'unit': 'px', 'value': 1000 }],
+    'position': 'relative',
+    'margin': [{ 'unit': 'string', 'value': 'auto' }, { 'unit': 'string', 'value': 'auto' }, { 'unit': 'string', 'value': 'auto' }, { 'unit': 'string', 'value': 'auto' }]
+  },
+  // Caption text
+  'text': {
+    'color': '#f2f2f2',
+    'fontSize': [{ 'unit': 'px', 'value': 15 }],
+    'padding': [{ 'unit': 'px', 'value': 8 }, { 'unit': 'px', 'value': 12 }, { 'unit': 'px', 'value': 8 }, { 'unit': 'px', 'value': 12 }],
+    'position': 'absolute',
+    'bottom': [{ 'unit': 'px', 'value': 8 }],
+    'width': [{ 'unit': '%H', 'value': 1 }],
+    'textAlign': 'center',
+    'only screen&&<w300': {
+      'fontSize': [{ 'unit': 'px', 'value': 11 }]
+    }
+  },
+  // Number text (1/3 etc)
+  'numbertext': {
+    'color': '#f2f2f2',
+    'fontSize': [{ 'unit': 'px', 'value': 12 }],
+    'padding': [{ 'unit': 'px', 'value': 8 }, { 'unit': 'px', 'value': 12 }, { 'unit': 'px', 'value': 8 }, { 'unit': 'px', 'value': 12 }],
+    'position': 'absolute',
+    'top': [{ 'unit': 'px', 'value': 0 }]
+  },
+  // The dots/bullets/indicators
+  'dot': {
+    'height': [{ 'unit': 'px', 'value': 15 }],
+    'width': [{ 'unit': 'px', 'value': 15 }],
+    'margin': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 2 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 2 }],
+    'backgroundColor': '#bbb',
+    'borderRadius': '50%',
+    'display': 'inline-block',
+    'transition': 'background-color 0.6s ease'
+  },
+  'active': {
+    'backgroundColor': '#717171'
+  },
+  // Fading animation
+  'fade': {
+    'WebkitAnimationName': 'fade',
+    'WebkitAnimationDuration': '1.5s',
+    'animationName': 'fade',
+    'animationDuration': '1.5s'
+  },
+  // On smaller screens, decrease text size
+  // cardPhoto
+  'cardPhoto': {
+    'position': 'relative',
+    'textAlign': 'center',
+    'color': 'white'
+  },
+  'bottom-left': {
+    'position': 'absolute',
+    'bottom': [{ 'unit': 'px', 'value': 8 }],
+    'left': [{ 'unit': 'px', 'value': 16 }]
+  },
+  'top-left': {
+    'position': 'absolute',
+    'top': [{ 'unit': 'px', 'value': 8 }],
+    'left': [{ 'unit': 'px', 'value': 16 }]
+  },
+  'top-right': {
+    'position': 'absolute',
+    'top': [{ 'unit': 'px', 'value': 8 }],
+    'right': [{ 'unit': 'px', 'value': 16 }]
+  },
+  'bottom-right': {
+    'position': 'absolute',
+    'bottom': [{ 'unit': 'px', 'value': 8 }],
+    'right': [{ 'unit': 'px', 'value': 16 }]
+  },
+  'centered': {
+    'position': 'absolute',
+    'top': [{ 'unit': '%V', 'value': 0.5 }],
+    'left': [{ 'unit': '%H', 'value': 0.5 }],
+    'transform': 'translate(-50%, -50%)'
   }
 });
